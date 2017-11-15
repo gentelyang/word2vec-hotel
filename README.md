@@ -1,0 +1,11 @@
+# word2vec-hotel
+the hotel evaluation analysis in Chinese
+
+我主要是对caoe2015的微波评价进行分词处理并去除停用词，用的是哈工大的stopword.txt，然后构造了自己的copus，但是我的word2vec是在fenci3_result
+这个语料库下实现的，用的是skip-gram模型，然后最终版是word2vec_03这个可以直接运行就可以实现对fenci3_result这个语料库的中文词语转化为词向量形式。
+
+这里再说名一下，preprocess.py是对COAE_weibo2015.xml这个xml文件的预处理，然后预处理完建立了自己的语料库corpus.txt,但、是没有对其向量话，我后期将会
+利用多种方法来将其向量话。
+
+
+我接下来要做的就是将对得到的词向量输入到卷积神经网络中进行分类。
