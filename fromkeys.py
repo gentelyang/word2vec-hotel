@@ -1,0 +1,5 @@
+seq=('name','sex','age')
+dict=dict.fromkeys(seq)
+print(str(dict))
+dict=dict.fromkeys(seq,2)
+print(str(dict))
